@@ -86,6 +86,15 @@
     margin: 20px 0;
     text-align: center;
   }
+  .glimpse-text h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .link-image {
+    margin-left: 5px;
+  }
   .glimpse-container {
     padding: 0px 0px;
   }
@@ -205,6 +214,11 @@
     max-width: 90vw;
     margin-right: 0px;
     margin-left: 0;
+  }
+  .glimpse-item:nth-child(1) .glimpse-text {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
   }
   .glimpse-image {
     height: 430px;
