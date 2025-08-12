@@ -101,6 +101,27 @@
     margin: 0 40px;
     width: calc(100% - 80px);
   }
+  .glimpse-item:nth-child(1) .glimpse-image-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 265px;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .glimpse-item:nth-child(1) .glimpse-image {
+    transform: scale(1.3);
+    transform-origin: top left;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .glimpse-item:nth-child(1) {
+    overflow: hidden;
+  }
   .glimpse-item:nth-child(2) .glimpse-image-wrapper {
     overflow-x: auto;
     white-space: nowrap;

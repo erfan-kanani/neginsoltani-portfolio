@@ -26,7 +26,9 @@ export default function Glimpse() {
       </div>
       <div className="glimpse-container">
         <FlexRow reverse className="glimpse-item">
-          <img src={BrainsClinic} alt="content" className="glimpse-image" />
+          <div className="glimpse-image-wrapper" ref={imageWrapperRef}>
+            <img src={BrainsClinic} alt="content" className="glimpse-image" />
+          </div>
           <div className="glimpse-text">
             <Text subheader style={{ display: "flex", alignItems: "center" }}>
               All Brains Clinic{" "}
