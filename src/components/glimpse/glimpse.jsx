@@ -12,6 +12,7 @@ import ElementalMysteries from "../../assets/elementalmysteries.jpg";
 import iQLast from "../../assets/iQLast.jpg";
 import khu from "../../assets/khu.png";
 import hack from "../../assets/hack.jpg";
+import thesis from "../../assets/thesis.jpg";
 import "./glimpse.css";
 
 export default function Glimpse() {
@@ -165,6 +166,42 @@ export default function Glimpse() {
               <Text className="glimpse-role" color={"#908f71"}>
                 UX Researcher
               </Text>
+            </div>
+          </div>
+        </FlexRow>
+
+        <FlexRow reverse className="glimpse-item">
+          <div className="glimpse-image-wrapper">
+            <img src={thesis} alt="Conversational AI Agents in VR" className="glimpse-image" />
+          </div>
+          <div className="glimpse-text">
+            <Text subheader>
+              Conversational AI Agents in VR
+            </Text>
+            <p />
+            <Text>
+              This Master's thesis project explores how different voice interaction triggers affect user experience when engaging with conversational AI agents in Virtual Reality. Developed in Unity for Meta Quest Pro, the system features a custom VR prototype where users interact with a minimally AI agent through a flag-guessing game. The project implements and compares four distinct interaction methods: controller button activation, eye gaze tracking, wake word detection, and continuous voice activation. By integrating OpenAI's APIs, the system enables natural conversational interactions while maintaining experimental control.
+            </Text>
+            <div className="glimpse-roles">
+              <Text className="glimpse-role" color={"#908f71"}>
+                XR Developer
+              </Text>
+              <Text className="glimpse-role" color={"#908f71"}>
+                UX Researcher
+              </Text>
+            </div>
+            <div className="buttonContainer">
+              <Button
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1n88ck6Qd273FcPUhPYavfPcp8jGw6zv7/view?usp=sharing",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                Demo Video
+              </Button>
             </div>
           </div>
         </FlexRow>
