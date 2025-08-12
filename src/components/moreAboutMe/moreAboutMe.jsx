@@ -43,7 +43,7 @@ export default function MoreAboutMe() {
                 fontWeight={"700"}
                 fontSize={isMobile && "15px"}
               >
-                UI/UX Design
+                UI/UX Design & Research
               </Text>
               <p />
               <Text
@@ -51,8 +51,7 @@ export default function MoreAboutMe() {
                 lineHeight={"17px"}
                 fontSize={isMobile ? "13px" : "14px"}
               >
-                Building intuitive, beautiful digital experiences with a focus
-                on both form and function.
+                Creating intuitive, beautiful digital experiences grounded in empathy-driven, inclusive research to ensure meaningful and accessible designs.
               </Text>
             </div>
           </Rectangle>
@@ -64,7 +63,7 @@ export default function MoreAboutMe() {
                 fontWeight={"700"}
                 fontSize={isMobile && "15px"}
               >
-                UX Research
+                Research Assistant
               </Text>
               <p />
               <Text
@@ -72,8 +71,7 @@ export default function MoreAboutMe() {
                 fontSize={isMobile ? "13px" : "14px"}
                 lineHeight={"17px"}
               >
-                Inclusive, empathy-driven research that guides designs to be
-                meaningful and accessible.
+                Contributing to HCI research, from exploring VR in education to designing human-AI interactions in immersive environments.
               </Text>
             </div>
           </Rectangle>

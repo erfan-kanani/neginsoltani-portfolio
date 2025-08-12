@@ -11,6 +11,7 @@ import EmissionVision from "../../assets/emissionvision.jpg";
 import ElementalMysteries from "../../assets/elementalmysteries.jpg";
 import iQLast from "../../assets/iQLast.jpg";
 import khu from "../../assets/khu.png";
+import hack from "../../assets/hack.jpg";
 import "./glimpse.css";
 
 export default function Glimpse() {
@@ -274,6 +275,37 @@ export default function Glimpse() {
               >
                 Demo Video
               </Button>
+            </div>
+          </div>
+        </FlexRow>
+        <FlexRow className="glimpse-item">
+          <div className="glimpse-image-wrapper" ref={imageWrapperRef}>
+            <img src={hack} alt="Hatch & Match – XRHack 2024 content" className="glimpse-image" />
+          </div>
+          <div className="glimpse-text">
+            <Text subheader style={{ display: "flex", alignItems: "center" }}>
+              Hatch & Match – XRHack 2024{" "}
+              <a
+                href="https://docs.google.com/presentation/d/1AKcFuqYu8K9D1oP8V6XqCwsye7iN69UTo_K1IK6Xwd8/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={linkIcon} className="link-image" />
+              </a>
+            </Text>
+            <p />
+            <Text>
+              As part of a team at XRHack 2024, I contributed to developing the game concept and was responsible for designing the game assets and the complete UI in ShapesXR and Figma. I also created animations and visual materials for the pitch, and presented the idea in our video submission.
+            </Text>
+            <div className="glimpse-roles">
+              <Text className="glimpse-role" color={"#908f71"}>
+                UI/UX Designer
+              </Text>
+              
+              <Text className="glimpse-role" color={"#908f71"}>
+                XR Developer
+              </Text>
             </div>
           </div>
         </FlexRow>
