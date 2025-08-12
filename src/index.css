@@ -1,12 +1,40 @@
+/* CSS Reset and Mobile Optimization */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
 body {
   background-color: #F8F2F2;
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-  font-family: 'montserrat';
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Ensure consistent rendering across devices */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* Prevent horizontal scrolling on mobile */
+  overflow-x: hidden;
+}
+
+/* Prevent zoom on input focus for iOS */
+input, textarea, select {
+  font-size: 16px;
+}
+
+/* Better mobile touch targets */
+button, a, [role="button"] {
+  min-height: 44px;
+  min-width: 44px;
 }
 
 code {
