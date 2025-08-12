@@ -68,7 +68,9 @@
   margin-top: 16px;
 }
 .glimpse-image-wrapper {
-  /* max-height: 582px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Mobile Styles */
@@ -259,6 +261,42 @@
   }
 
   .glimpse-item:nth-child(8) {
+    overflow: hidden;
+  }
+  
+  .glimpse-item:nth-child(9) .glimpse-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .glimpse-item:nth-child(9) .glimpse-image {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  .glimpse-item:nth-child(9) {
+    overflow: hidden;
+  }
+  
+  .glimpse-item:nth-child(10) .glimpse-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .glimpse-item:nth-child(10) .glimpse-image {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  .glimpse-item:nth-child(10) {
     overflow: hidden;
   }
   .glimpse-item:nth-child(even) .glimpse-text {

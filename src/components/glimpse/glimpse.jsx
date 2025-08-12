@@ -13,6 +13,7 @@ import iQLast from "../../assets/iQLast.jpg";
 import khu from "../../assets/khu.png";
 import hack from "../../assets/hack.jpg";
 import thesis from "../../assets/thesis.jpg";
+import fiction from "../../assets/fiction.png";
 import "./glimpse.css";
 
 export default function Glimpse() {
@@ -316,7 +317,7 @@ export default function Glimpse() {
           </div>
         </FlexRow>
         <FlexRow className="glimpse-item">
-          <div className="glimpse-image-wrapper" ref={imageWrapperRef}>
+          <div className="glimpse-image-wrapper">
             <img src={hack} alt="Hatch & Match – XRHack 2024 content" className="glimpse-image" />
           </div>
           <div className="glimpse-text">
@@ -342,6 +343,36 @@ export default function Glimpse() {
               
               <Text className="glimpse-role" color={"#908f71"}>
                 XR Developer
+              </Text>
+            </div>
+          </div>
+        </FlexRow>
+        <FlexRow reverse className="glimpse-item">
+          <div className="glimpse-image-wrapper">
+            <img src={fiction} alt="The Future of XR in Social Well-Being - Design Fiction" className="glimpse-image" />
+          </div>
+          <div className="glimpse-text">
+            <Text subheader style={{ display: "flex", alignItems: "center" }}>
+              The Future of XR in Social Well-Being - Design Fiction{" "}
+              <a
+                href="https://docs.google.com/presentation/d/1KBvOycla88sM1a5mk04n2SQWkeQBPBiWFwWUNsvz-fA/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={linkIcon} className="link-image" />
+              </a>
+            </Text>
+            <p />
+            <Text>
+              I developed the core idea behind a speculative design fiction set in 2034, exploring how XR technology transforms social connection in a world shaped by isolation and pandemic effects. I authored the article and designed the magazine cover, advertisements, and layouts, presenting a thoughtful narrative on XR's psychological, social, and ethical impacts, including accessibility and sustainability factors.
+            </Text>
+            <div className="glimpse-roles">
+              <Text className="glimpse-role" color={"#908f71"}>
+                Visual Designer
+              </Text>
+              <Text className="glimpse-role" color={"#908f71"}>
+                Author
               </Text>
             </div>
           </div>
