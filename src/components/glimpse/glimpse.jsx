@@ -9,6 +9,7 @@ import BlueBird from "../../assets/bluebird.png";
 import MindPal from "../../assets/mindpal.png";
 import EmissionVision from "../../assets/emissionvision.jpg";
 import ElementalMysteries from "../../assets/elementalmysteries.jpg";
+import iQLast from "../../assets/iQLast.jpg";
 import "./glimpse.css";
 
 export default function Glimpse() {
@@ -25,6 +26,36 @@ export default function Glimpse() {
         <Text header>A Glimpse Of My Creative World</Text>
       </div>
       <div className="glimpse-container">
+        <FlexRow className="glimpse-item">
+          <div className="glimpse-image-wrapper" ref={imageWrapperRef}>
+            <img src={iQLast} alt="iQliniQ content" className="glimpse-image" />
+          </div>
+          <div className="glimpse-text">
+            <Text subheader style={{ display: "flex", alignItems: "center" }}>
+              iQliniQ{" "}
+              <a
+                href="https://iqliniq.com/#team"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={linkIcon} className="link-image" />
+              </a>
+            </Text>
+            <p />
+            <Text>
+              Part of the design team, designing core workflows such as patient booking, admin panel, and patient dashboard to streamline appointments, manage services, and ease clinicians' workloads. Focused on reducing clinician burden and simplifying patient access to key features like scheduling and document handling. Utilized the Minimal Web design system to ensure consistency, clarity, and scalability across the platform.
+            </Text>
+            <div className="glimpse-roles">
+              <Text color={"#908f71"} className="glimpse-role">
+                UI/UX Designer
+              </Text>
+              <Text color={"#908f71"} className="glimpse-role">
+                UX Researcher
+              </Text>
+            </div>
+          </div>
+        </FlexRow>
         <FlexRow reverse className="glimpse-item">
           <div className="glimpse-image-wrapper" ref={imageWrapperRef}>
             <img src={BrainsClinic} alt="content" className="glimpse-image" />

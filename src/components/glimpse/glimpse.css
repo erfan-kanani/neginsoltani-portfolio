@@ -25,6 +25,7 @@
   display: block;
   max-height: 582px;
   height: auto;
+  border-radius: 12px;
 }
 
 .glimpse-item:nth-child(even) .glimpse-text {
@@ -39,6 +40,11 @@
   max-width: 700px;
   margin-right: 40px;
   margin-left: 0;
+}
+
+.glimpse-item:nth-child(1) .glimpse-text {
+  margin-left: 20px;
+  margin-right: 0;
 }
 
 .glimpse-roles {
@@ -94,10 +100,10 @@
     justify-content: center;
     margin-top: 16px;
   }
-  .glimpse-item:nth-child(-n + 3) .glimpse-image {
+  .glimpse-item:nth-child(-n + 4) .glimpse-image {
     margin: 0;
   }
-  .glimpse-item:nth-child(n + 4) .glimpse-image {
+  .glimpse-item:nth-child(n + 5) .glimpse-image {
     margin: 0 40px;
     width: calc(100% - 80px);
   }
@@ -105,18 +111,20 @@
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
-    height: 265px;
+    height: 200px;
     padding-left: 20px;
     box-sizing: border-box;
   }
 
   .glimpse-item:nth-child(1) .glimpse-image {
-    transform: scale(1.3);
+    transform: scale(1.0);
     transform-origin: top left;
     display: inline-block;
     width: auto;
-    height: auto;
+    height: 180px;
     margin: 0;
+    margin-right: 10px;
+    object-fit: cover;
   }
 
   .glimpse-item:nth-child(1) {
@@ -147,7 +155,7 @@
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
-    height: 270px;
+    height: 265px;
     padding-left: 20px;
     box-sizing: border-box;
   }
@@ -162,6 +170,27 @@
   }
 
   .glimpse-item:nth-child(3) {
+    overflow: hidden;
+  }
+  .glimpse-item:nth-child(4) .glimpse-image-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 270px;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .glimpse-item:nth-child(4) .glimpse-image {
+    transform: scale(1.3);
+    transform-origin: top left;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .glimpse-item:nth-child(4) {
     overflow: hidden;
   }
   .glimpse-item:nth-child(even) .glimpse-text {
