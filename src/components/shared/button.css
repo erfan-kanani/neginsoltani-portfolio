@@ -1,0 +1,33 @@
+.button {
+  width: 139px;
+  height: 48px;
+  border: 1px solid #908f71;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.not-outlined {
+  background-color: #908f71;
+  color: #fff;
+}
+
+.not-outlined:hover {
+  background-color: #78775d;
+}
+
+.outlined {
+  background-color: #f8f2f2;
+  color: #000;
+}
+
+.outlined:hover {
+  background-color: #908f71;
+  color: #fff;
+}

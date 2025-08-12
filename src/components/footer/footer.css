@@ -1,0 +1,38 @@
+/* Styles for Footer component */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  padding-right: 120px;
+  padding-left: 120px;
+}
+
+.footer-bottom {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.getintouch {
+  margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .footer-bottom {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .getintouch {
+    margin-bottom: 8px;
+  }
+}

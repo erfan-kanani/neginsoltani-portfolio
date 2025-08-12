@@ -1,0 +1,169 @@
+.glimpse-header {
+  margin-top: 64px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.glimpse-container {
+  text-align: left;
+  padding: 80px 120px;
+}
+
+.glimpse-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.glimpse-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.glimpse-image {
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+  max-height: 582px;
+  height: auto;
+}
+
+.glimpse-item:nth-child(even) .glimpse-text {
+  text-align: left;
+  max-width: 700px;
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+.glimpse-item:nth-child(odd) .glimpse-text {
+  text-align: left;
+  max-width: 700px;
+  margin-right: 40px;
+  margin-left: 0;
+}
+
+.glimpse-roles {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.link-image {
+  vertical-align: middle;
+}
+
+.glimpse-role {
+  color: #908f71;
+  font-size: 12px;
+  font-weight: 600;
+}
+.buttonContainer {
+  display: flex;
+  margin-top: 16px;
+}
+.glimpse-image-wrapper {
+  /* max-height: 582px; */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .glimpse-header {
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  .glimpse-item {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .glimpse-text {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .glimpse-container {
+    padding: 0px 0px;
+  }
+  .glimpse-roles {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 16px;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .glimpse-item:nth-child(-n + 3) .glimpse-image {
+    margin: 0;
+  }
+  .glimpse-item:nth-child(n + 4) .glimpse-image {
+    margin: 0 40px;
+    width: calc(100% - 80px);
+  }
+  .glimpse-item:nth-child(2) .glimpse-image-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 265px;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .glimpse-item:nth-child(2) .glimpse-image {
+    transform: scale(1.3);
+    transform-origin: top left;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .glimpse-item:nth-child(2) {
+    overflow: hidden;
+  }
+  .glimpse-item:nth-child(3) .glimpse-image-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 270px;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .glimpse-item:nth-child(3) .glimpse-image {
+    transform: scale(1.3);
+    transform-origin: top left;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .glimpse-item:nth-child(3) {
+    overflow: hidden;
+  }
+  .glimpse-item:nth-child(even) .glimpse-text {
+    text-align: center;
+    max-width: 90vw;
+    margin-left: 0px;
+    margin-right: 0;
+  }
+
+  .glimpse-item:nth-child(odd) .glimpse-text {
+    text-align: center;
+    max-width: 90vw;
+    margin-right: 0px;
+    margin-left: 0;
+  }
+  .glimpse-image {
+    height: 430px;
+  }
+}
+
+@media (max-width: 1256px) and (min-width: 768px) {
+  .glimpse-container {
+    text-align: left;
+    padding: 40px 60px;
+  }
+}

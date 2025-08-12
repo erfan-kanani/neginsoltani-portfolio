@@ -1,0 +1,33 @@
+.text {
+  color: #1f1f1f;
+  line-height: inherit;
+}
+
+.text-header {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.text-subheader {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.text-default {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .text-header {
+    font-size: 20px;
+  }
+  .text-subheader {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .text-default {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
