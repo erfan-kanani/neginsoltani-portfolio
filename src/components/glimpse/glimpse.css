@@ -82,10 +82,11 @@
   .glimpse-item {
     flex-direction: column !important;
     text-align: center;
+    margin-bottom: 40px;
   }
 
   .glimpse-text {
-    margin: 20px 0;
+    margin: 24px 0;
     text-align: center;
   }
   .glimpse-text h2 {
@@ -273,19 +274,16 @@
   .glimpse-item:nth-child(even) .glimpse-text {
     text-align: center;
     max-width: 90vw;
-    margin-left: 0px;
-    margin-right: 0;
+    margin: 24px 0;
   }
 
   .glimpse-item:nth-child(odd) .glimpse-text {
     text-align: center;
     max-width: 90vw;
-    margin-right: 0px;
-    margin-left: 0;
+    margin: 24px 0;
   }
   .glimpse-item:nth-child(1) .glimpse-text {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 24px 0;
     text-align: center;
   }
   .glimpse-image {
