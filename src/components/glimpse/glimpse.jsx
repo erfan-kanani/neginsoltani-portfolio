@@ -10,6 +10,7 @@ import MindPal from "../../assets/mindpal.png";
 import EmissionVision from "../../assets/emissionvision.jpg";
 import ElementalMysteries from "../../assets/elementalmysteries.jpg";
 import iQLast from "../../assets/iQLast.jpg";
+import khu from "../../assets/khu.png";
 import "./glimpse.css";
 
 export default function Glimpse() {
@@ -88,6 +89,53 @@ export default function Glimpse() {
         </FlexRow>
         <FlexRow className="glimpse-item">
           <div className="glimpse-image-wrapper" ref={imageWrapperRef}>
+            <img src={khu} alt="Kharazmi University Portal content" className="glimpse-image" />
+          </div>
+          <div className="glimpse-text">
+            <Text subheader style={{ display: "flex", alignItems: "center" }}>
+              Kharazmi University{" "}
+              <a
+                href="https://khu.ac.ir/en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={linkIcon} className="link-image" />
+              </a>
+            </Text>
+            <p />
+            <Text>
+              Designed the user interface for the university's online portal, enhancing accessibility and usability across key features like e-services, login panels, and navigation systems (students, faculty, staff).
+            </Text>
+            <div className="glimpse-roles">
+              <Text color={"#908f71"} className="glimpse-role">
+                UI/UX Designer
+              </Text>
+            </div>
+          </div>
+                </FlexRow>
+        <FlexRow reverse className="glimpse-item">
+          <div className="glimpse-image-wrapper" ref={imageWrapperRef}>
+            <img src={MindPal} alt="content" className="glimpse-image" />
+          </div>
+          <div className="glimpse-text">
+            <Text subheader>Mind Pal</Text>
+            <p />
+            <Text>
+              Designed the user interface and experience for the British
+              Columbia Children's Hospital, focusing on improving mental health
+              support for young patients through an engaging and user-friendly
+              digital platform.
+            </Text>
+            <div className="glimpse-roles">
+              <Text className="glimpse-role" color={"#908f71"}>
+                UI/UX Designer
+              </Text>
+            </div>
+          </div>
+        </FlexRow>
+        <FlexRow className="glimpse-item">
+          <div className="glimpse-image-wrapper" ref={imageWrapperRef}>
             <img src={BlueBird} alt="content" className="glimpse-image" />
           </div>
           <div className="glimpse-text">
@@ -119,26 +167,8 @@ export default function Glimpse() {
             </div>
           </div>
         </FlexRow>
-        <FlexRow reverse className="glimpse-item">
-          <div className="glimpse-image-wrapper" ref={imageWrapperRef}>
-            <img src={MindPal} alt="content" className="glimpse-image" />
-          </div>
-          <div className="glimpse-text">
-            <Text subheader>Mind Pal</Text>
-            <p />
-            <Text>
-              Designed the user interface and experience for the British
-              Columbia Children’s Hospital, focusing on improving mental health
-              support for young patients through an engaging and user-friendly
-              digital platform.
-            </Text>
-            <div className="glimpse-roles">
-              <Text className="glimpse-role" color={"#908f71"}>
-                UI/UX Designer
-              </Text>
-            </div>
-          </div>
-        </FlexRow>
+
+        
 
         <FlexRow className="glimpse-item">
           <div className="glimpse-image-wrapper">
